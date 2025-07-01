@@ -13,6 +13,7 @@ fi
 # Define the chain configurations
 typeset -A chains
 chains["mainnet"]="$MAINNET_RPC_URL"
+chains["sepolia"]="$SEPOLIA_RPC_URL"
 chains["bsc"]="$BSC_RPC_URL"
 chains["polygon"]="$POLYGON_RPC_URL"
 chains["avalanche"]="$AVALANCHE_RPC_URL"
@@ -24,6 +25,7 @@ chains["zksync"]="$ZKSYNC_RPC_URL"
 chains["linea"]="$LINEA_RPC_URL"
 chains["sonic"]="$SONIC_RPC_URL"
 chains["unichain"]="$UNICHAIN_RPC_URL"
+chains["monad"]="$MONAD_RPC_URL"
 
 rpc_url="${chains["$1"]}"
 if [ -z "$rpc_url" ]; then
